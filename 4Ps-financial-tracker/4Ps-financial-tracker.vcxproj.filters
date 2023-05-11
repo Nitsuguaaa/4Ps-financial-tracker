@@ -42,7 +42,7 @@
     <ClCompile Include="familySearch.cpp">
       <Filter>Source Files\frontEnd</Filter>
     </ClCompile>
-    <ClCompile Include="directoryFinder.cpp">
+    <ClCompile Include="handlingTools.cpp">
       <Filter>Source Files\backEnd</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,7 +53,7 @@
     <ClInclude Include="userInterface.h">
       <Filter>Header Files\frontEndH</Filter>
     </ClInclude>
-    <ClInclude Include="directoryFinder.h">
+    <ClInclude Include="handlingTools.h">
       <Filter>Header Files\backEndH</Filter>
     </ClInclude>
   </ItemGroup>

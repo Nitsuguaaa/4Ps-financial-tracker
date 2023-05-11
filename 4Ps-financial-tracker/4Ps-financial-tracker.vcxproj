@@ -60,7 +60,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="directoryFinder.cpp" />
+    <ClCompile Include="handlingTools.cpp" />
     <ClCompile Include="familyRegistration.cpp" />
     <ClCompile Include="familySearch.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -68,7 +68,7 @@
     <ClCompile Include="ratingCalculator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="directoryFinder.h" />
+    <ClInclude Include="handlingTools.h" />
     <ClInclude Include="ratingCalculator.h" />
     <ClInclude Include="userInterface.h" />
   </ItemGroup>
