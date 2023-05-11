@@ -60,7 +60,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="familyRegistration.cpp" />
+    <ClCompile Include="familySearch.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="mainInterface.cpp" />
+    <ClCompile Include="ratingCalculator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ratingCalculator.h" />
+    <ClInclude Include="userInterface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

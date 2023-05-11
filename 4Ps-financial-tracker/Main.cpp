@@ -1,12 +1,16 @@
 #include <iostream>
 
+#include "ratingCalculator.h"
+#include "userInterface.h"
+
 using namespace std;
 
 int main() {
+	/*Calling user defined libraries (e.g., ratingCalculator.h)*/
 
-	cout << "Hello putangina 5 oras bago naayos" << endl;
-	cout << "second line, maya ko lagay 3rd" << endl;
-	cout << "line 3" << endl;
+	userInterfaceMain ui; //ui ay yung declaration mo sa file na to para magamit mo ung separate files
+
+	ui.mainInterface();//calling mainInterface function in userInterface.h
 
 	system("PAUSE");
 

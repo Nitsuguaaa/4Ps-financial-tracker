@@ -13,10 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\backEnd">
+      <UniqueIdentifier>{5f3a442a-15ab-426d-9b47-2cf5f0abb32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\frontEnd">
+      <UniqueIdentifier>{25a7ddc1-512a-4a04-990a-7ab12c50d972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\backEndH">
+      <UniqueIdentifier>{e67e0e94-ceca-4aca-8557-56a91655e083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\frontEndH">
+      <UniqueIdentifier>{23133b3c-a3f6-4514-95b1-b07cbe42dc51}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ratingCalculator.cpp">
+      <Filter>Source Files\backEnd</Filter>
+    </ClCompile>
+    <ClCompile Include="mainInterface.cpp">
+      <Filter>Source Files\frontEnd</Filter>
+    </ClCompile>
+    <ClCompile Include="familyRegistration.cpp">
+      <Filter>Source Files\frontEnd</Filter>
+    </ClCompile>
+    <ClCompile Include="familySearch.cpp">
+      <Filter>Source Files\frontEnd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ratingCalculator.h">
+      <Filter>Header Files\backEndH</Filter>
+    </ClInclude>
+    <ClInclude Include="userInterface.h">
+      <Filter>Header Files\frontEndH</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
