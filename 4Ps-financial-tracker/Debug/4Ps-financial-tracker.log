@@ -1,15 +1,13 @@
-﻿Build started 11/05/2023 3:12:48 pm.
+﻿Build started 11/05/2023 5:19:12 pm.
      1>Project "C:\Users\USER\dsafp\4Ps-financial-tracker\4Ps-financial-tracker\4Ps-financial-tracker.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\4Ps-financial-tracker.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         e:\E Program Files\vs2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt familyRegistration.cpp familySearch.cpp mainInterface.cpp
-         mainInterface.cpp
-         familySearch.cpp
-         familyRegistration.cpp
-         Generating Code...
+         e:\E Program Files\vs2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
        Link:
-         e:\E Program Files\vs2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\USER\dsafp\4Ps-financial-tracker\Debug\4Ps-financial-tracker.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\4Ps-financial-tracker.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\USER\dsafp\4Ps-financial-tracker\Debug\4Ps-financial-tracker.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\USER\dsafp\4Ps-financial-tracker\Debug\4Ps-financial-tracker.lib" /MACHINE:X86 Debug\familyRegistration.obj
+         e:\E Program Files\vs2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\USER\dsafp\4Ps-financial-tracker\Debug\4Ps-financial-tracker.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\4Ps-financial-tracker.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\USER\dsafp\4Ps-financial-tracker\Debug\4Ps-financial-tracker.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\USER\dsafp\4Ps-financial-tracker\Debug\4Ps-financial-tracker.lib" /MACHINE:X86 Debug\directoryFinder.obj
+         Debug\familyRegistration.obj
          Debug\familySearch.obj
          Debug\Main.obj
          Debug\mainInterface.obj
@@ -25,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.07
+Time Elapsed 00:00:00.69
