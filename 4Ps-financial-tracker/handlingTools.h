@@ -13,7 +13,8 @@ using namespace std;
 class handlingToolsMain
 {
     public:
+		//string test[6];
         void findDir();
-		void fEncode(string fileName, string arrToEncode[], int sizeToEncode);
-		void fDecode();
+		void fEncode(string fileName, string arrToEncode[], int arraySize);
+		void fDecode(string fileName, string arrToDecode[]);
 };

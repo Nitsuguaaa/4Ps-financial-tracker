@@ -25,6 +25,8 @@ int main() {
 		fStart.close();
 	}
 
+	string test[6];
+	htf.fDecode("testFamily2", test);
 
 	ui.mainInterface();//calling mainInterface function in userInterface.h
 
