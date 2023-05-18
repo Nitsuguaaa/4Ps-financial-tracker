@@ -243,7 +243,9 @@ void familyListWrite(string familyID, string familyName, string oldFamilyName) {
 					if(found != string::npos) {
 						//Gumagana naman kahit walang nakalagay kaya wag na lang natin guluhin
 					} else { 
+						if(!currentLine.empty()) {
 						currentFamilyList.push(currentLine);
+						}
 					}
 				}
 			file.close();
@@ -272,7 +274,6 @@ void monthlyRating() {
         }
 
         file.close();
-        familyList.pop();
 
         while (!familyList.empty()) {
             string familyInfo[9], currentFile = familyList.front();
@@ -370,6 +371,9 @@ void monthlyRating() {
             }
         }
     }
+	cout << "\n\t\t\tMonthly Rating has been calculated, budgeted accordingly to each family\n" << endl;
+	system("PAUSE");
+	mainInterface();
 }
 
 
@@ -511,7 +515,7 @@ void familySearch(string fileName)
 	cout<<"\t\t\t_________________________________________________________________\n";
 
 			} else if(option ==2) {
-				cout << "\t\t\tListing all registered families with their ID: " << endl;
+				cout << "\t\t\tListing all registered families with their ID: " << endl << endl;
 				ifstream file(".\\familyTable\\familyCollection.dat");
 
 				if(file.is_open()) {					
@@ -605,16 +609,13 @@ void familyRemove()
 	convertStr << choice;
 	convertStr >> option;
 
-	switch(option) {
-		case 1:
+		if(option == 1) {
 			cout<<"\t\t\tDo you want to edit this family's information? (Y/N): ";
 			getline(cin, choice);
 			if(choice == "Y" || choice == "y") {
 				writeFamily(3,familyID, true);
 			}
-			break;
-
-		case 2:
+		} else if(option == 2) {
 			cout<<"\t\t\tDo you want to delete this family? (Y/N): ";
 			getline(cin, choice);
 			if(choice == "Y" || choice == "y") {
@@ -634,15 +635,50 @@ void familyRemove()
 				remove(charUID);
 				remove(charPUID);
 
-				cout << "\t\t\tSuccessfully removed family" << endl;
-			}
-			break;
+    std::string lineToRemove = familyInfo[4] + "\t-\t" + familyInfo[0];
+    vector<string> lines;
 
-		default:
+    ifstream inputFile(".\\familyTable\\familyCollection.dat");
+    if (!inputFile.is_open()) {
+        cerr << "Error opening file." << endl;
+        return;
+    }
+
+    string line;
+    bool removeLine = false;
+    while (getline(inputFile, line)) {
+        if (line != lineToRemove || removeLine) {
+            if (!line.empty() || removeLine) {
+                lines.push_back(line);
+                removeLine = false;
+            }
+        } else {
+            removeLine = true;
+        }
+    }
+    inputFile.close();
+
+    ofstream outputFile(".\\familyTable\\familyCollection.dat");
+    if (!outputFile.is_open()) {
+        cerr << "Error opening file for writing." << endl;
+        return;
+    }
+
+    if (!lines.empty()) {
+        outputFile << lines[0];
+        for (size_t i = 1; i < lines.size(); ++i) {
+            outputFile << endl << lines[i];
+        }
+    }
+    outputFile.close();
+
+    cout << "\t\t\tSuccessfully removed family" << endl;
+
+			}
+		} else {
 			cout << "\t\t\tInvalid Option" << endl;
 			system("PAUSE");
 			mainInterface();
-			break;
 		}
 
 system("PAUSE");
